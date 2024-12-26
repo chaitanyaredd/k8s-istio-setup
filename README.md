@@ -75,3 +75,8 @@
 
 6. **Access the Application**:
     Access the application at `http://<external-ip>/demo`. Replace `<external-ip>` with the external IP address of your Istio ingress gateway.
+
+    **Note**: Capture the external IP of Istio ingress gateway
+    ```sh
+    kubectl get svc -n istio-system -o wide ``
+    ``` 
