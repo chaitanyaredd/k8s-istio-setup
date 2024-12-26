@@ -78,5 +78,5 @@
 
     **Note**: Capture the external IP of Istio ingress gateway
     ```sh
-    kubectl get svc -n istio-system -o wide ``
+    kubectl get svc -n istio-system -o wide
     ``` 
