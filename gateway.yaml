@@ -1,0 +1,15 @@
+apiVersion: networking.istio.io/v1beta1
+kind: Gateway
+metadata:
+  name: python-web-app-gw
+  namespace: default
+spec:
+  selector:
+    istio: ingressgateway  # Use Istio's ingress gateway
+  servers:
+  - port:
+      number: 80
+      name: http
+      protocol: HTTP
+    hosts:
+    - "*"  # Replace with your domain

@@ -1,0 +1,17 @@
+---
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: python-web-app-vs
+  namespace: default
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - python-web-app-gw
+  http:
+  - route:
+    - destination:
+        host: python-web-app
+        port:
+          number: 80
