@@ -5,6 +5,11 @@ Pre-requisites
 2. eksctl
 3. kubectl
 4. istioctl
+5. Docker
+
+Create docker image for python-web-app
+
+Push the docker image to dockerhub
 
 
 ================================================
@@ -24,3 +29,4 @@ K8s resources setup
 3. Install Istio in EKS k8s cluster
 4. Create gateway
 5. Create virtualservice
+6. Access the application http://<external-ip>/demo
